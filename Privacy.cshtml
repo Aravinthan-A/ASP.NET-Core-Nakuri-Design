@@ -1,0 +1,288 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/08bef55afd.js" crossorigin="anonymous"></script>
+<title>@ViewData["Title"] - Nakuri</title>
+<style>
+    .Margin {
+        margin: 0px 0px 0px 800px;
+    }
+    .navwidth {
+        width: 1400px;
+        height: 80px;
+        margin: 0px 0px 0px -150px;
+    }
+
+    .Logo {
+        margin: 0px 0px 0px 100px;
+    }
+    .Job{
+        margin: 10px 0px 0px 50px;
+    }
+    .Search{
+        width:223px;
+        height:40px;
+        border-radius:20PX;
+        border: solid 1px #e7e7f1;
+        padding:0px 0px 0px  10px;
+        font-size:14px;
+        font-weight:500;
+    }
+    .Scope{
+        margin: 0px 0px 0px -50px;
+        border-radius:20px;
+        border:solid 1px ;
+        border-color:transparent;
+
+    }
+    .Reg{
+        background-color: #f05537;
+        height:40px;
+        width:100px;
+        border-radius:20px;
+        border-color:transparent;
+        margin: 0px 0px 0px 0px;
+    }
+    .Logos{
+        background-color: white;
+        height: 40px;
+        color:blue;
+        width: 80px;
+        border-radius: 20px;
+        border:solid 1px ;
+        border-color:blue;
+        margin:10px 0px 0px 40px;
+    }
+    .Drop{
+        margin: 0px 200px 0px 0px;
+        border-left:solid 1px ;
+        border-color: #e7e7f1;
+        height:35px;
+        background-color:transparent;
+       
+    }
+
+    .Gain {
+        width: 500px;
+        margin: -525px 15px 0px 0px;
+        height: 550px;
+        float:right;
+        box-shadow: 0 3px 16px 0 rgba(0,106,194,.2);
+    }
+
+    .Main{
+        width:450px;
+        margin: 80px 0px 0px 150px;
+        height:500px;
+        box-shadow: 0 0px 16px 0 rgba(0,106,194,.2);
+    }
+
+    .News {
+        margin: 0px 0px 0px 0px;
+        padding:70px 0px 0px 50px;
+    }
+    .Click{
+        padding: 0px 0px 0px 50px;
+    }
+    .Profile{
+        padding: 30px 0px 0px 0px;
+        font-size:14px;
+    }
+    .span{
+        padding: 10px 0px 0px 0px;
+    }
+    .Logins{
+        padding: 30px 0px 0px 80px;
+    }
+    .Enter{
+        padding: 20px 0px 0px 80px;
+        font-size:12px;
+        font-weight:500;
+    }
+    .Value{
+        padding: 0px 0px 0px 80px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .Text {
+        padding: 0px 0px 0px 80px;
+        font-size: 14px;
+        width:300px;
+        height:50px;
+        border:solid 1px;
+        border-color: #e7e7f1;
+    }
+    .Para{
+        padding:0px 0px 0px 290px ;
+        font-size:12px;
+    }
+    .Asign{
+        padding:0px 0px 0px 0px ;
+        width:300px;
+        height:40px;
+        background-color: #4a90e2;
+        color:white;
+        font-size:15px;
+        font-weight:500;
+        border-color:transparent;
+    }
+    .Submit{
+        padding: 0px 0px 0px 80px;
+    }
+    .otp{
+        padding:10px 0px 0px 180px;
+        color:cornflowerblue;
+        font-size:14px;
+    }
+    .Date{
+        padding: 10px -100px 0px 0px;
+        width:300px;
+        height:30px;
+        font-size: 14px;
+        border-radius:20px;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.24);
+        border-color:transparent;
+        background: #fff;
+        color: #666;
+        margin: 30px 0px 0px 80px;
+
+    }
+    .online{
+        padding:0px 0px 0px 0px ;
+    }
+    .label{
+        width:300px;
+        border-bottom: solid 1px #e7e7f1;
+        margin: 0px 0px 0px 80px;
+        color: #8993a4;
+        font-size:13px;
+        padding: 0px 0px 0px 150px;
+       
+
+    }
+    .Net{
+        width:230px;
+        height:40px;
+        border: solid 1px #4a90e2;
+        margin: 20px 0px 0px 60px;
+        color: #4a90e2;
+        font-weight:500;
+        font-size:15px;
+         background-color: #FAFAFA;
+
+    }
+    .Class{
+        width:227px;
+        height:150px;
+        margin: 20px 0px 0px 240px;
+    }
+
+   
+body{
+        background-color: #FAFAFA;
+}
+   
+    
+</style>
+<div>
+<nav class="navbar navbar-expand-lg navwidth navbar-toggleable-lg navbar-light  bg-white   mb-4">
+    <div class="container-xxl">
+        <a>
+            <img class="Logo" src="/Images/Com.png" />
+        </a>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex-grow-2">
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-normal  Job" asp-area="" asp-controller="Home" asp-action="Index">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-normal Job " asp-area="" asp-controller="Home" asp-action="Index">Company</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-normal Job " asp-area="" asp-controller="Home" asp-action="Index">Services</a>
+                </li>
+                <li class="nav-item">
+                    <input class="Job Search" placeholder="Search jobs Here" type="search" />
+                    <button class="Scope bg-primary">
+                        <span><i class="fa-solid fa-magnifying-glass fa-sm" style="color: #ffffff;"></i></span>
+                    </button>
+                </li>
+                <li class="nav-item ">
+                   <input type="submit" class="Logos" value="Login" />
+                </li>
+                <li class="nav-item m-2 ">
+                     <form method="post" action="/Home/Register">
+                    <input class="w-150 fw-bold text-light Reg " type="submit" value="Register" />
+                    </form>
+                </li>      
+            </ul>
+            <div class="dropdown Drop bg-light">
+                <button type="button" class="btn btn-light bg-light dropdown-toggle" data-bs-toggle="dropdown">
+                    For Employers
+                </button>
+                <ul class="dropdown-menu bg-light">
+                    <li><a class="dropdown-item" href="#">Post a Job</a></li>
+                    <li><a class="dropdown-item" href="#">By online</a></li>
+                    <li><a class="dropdown-item" href="#">Employer Login</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</nav>
+<div class="Main">
+    <div class="News ">
+        <h5 >New to Nakuri?</h5>
+    </div>
+    <div>
+            <ul class="navbar-nav nav-item">
+            <li class="span">
+                    <img class="Click" src="~/Images/Click.jpg" />
+                    <span class="Profile">One click apply using naukri profile.</span>
+            </li>
+                <li class="span">
+                    <img class="Click" src="~/Images/Click.jpg" />
+                    <span class="Profile">Get relevant job recommendations.</span>
+                </li>
+                <li class="span">
+                    <img class="Click" src="~/Images/Click.jpg" />
+                    <span class="Profile">Showcase profile to top companies and consultants.</span>
+                </li>
+                <li class="span">
+                    <img class="Click" src="~/Images/Click.jpg" />
+                    <span class="Profile">Know application status on applied jobs.</span>
+                </li>          
+        </ul>
+        <button class="Net">Register for Free</button>
+        <img class="Class" src="/Images/Dec.png" />
+           
+    </div>
+</div>
+    <div class="Gain">
+        <div >
+            <h5 class="Logins">Login</h5>
+        </div>
+            <p class="Enter">Email ID / Username</p>
+            <div class="Value">
+            <input class=" Text" style="padding:0px 20px 0px 10px ;font-size:13px;color:#e7e7f1;" type="text" placeholder="Enter Email ID/Username" />
+            </div>
+             <p class="Enter">Password</p>
+            <div class="Value">
+            <input class="Text" style="padding:0px 20px 0px 10px" type="text" placeholder="Enter Password" />
+            </div>
+            <p class="text-primary Para">Forget Password?</p>
+            <div class="Submit">
+            <input class="Asign" type="submit" value="Login" />
+            </div>
+            <p class="otp">Use OTP to Login</p>
+         <label class="label ">Or</label>
+        <button class="Date">
+           <img class="online" src="~/Images/Screenshot 2023-07-13 154928.png" />Sign in with Google
+        </button>
+      
+        
+    </div>
+</div>

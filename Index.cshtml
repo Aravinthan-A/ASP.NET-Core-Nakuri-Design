@@ -1,0 +1,367 @@
+﻿@model Nakuri.Models.ErrorViewModel;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/08bef55afd.js" crossorigin="anonymous"></script>
+<title>@ViewData["Title"] - Nakuri</title>
+<style>
+    .Margin {
+        margin: 0px 0px 0px 800px;
+    }
+    .navwidth{
+        width:1400px;
+        height:80px;
+        margin: 0px 0px 0px -150px;
+    }
+    .Logo {
+        margin: 0px 0px 0px 100px;
+    }
+    .Can{
+       
+        width:300px;
+        border:solid #e7e7f1;
+        border-radius:20px;
+        background-color:white;
+        height:400px;
+        margin: 50px 0px 0px -50px;
+    }
+    .Boys{
+        width:144px;
+        height:144px;
+        margin: 30px 0px 0px 80px;
+    }
+    .Font{
+        font-size:smaller;
+    }
+    .Main{
+        background-color:white;
+        height:950px;
+        width: 850px;
+        float:right;
+        border: solid 2px #e7e7f1;
+       
+        margin: -400px -50px 0px 0px;
+        border-radius:16px ;
+    }
+    .Field{
+        margin: 30px 0px 0px 50px;
+    }
+    .Name{
+        margin: 30px 0px 0px 0px;
+        font-weight:500;
+        font-size:14px;
+    }
+    .Word{
+        height:46px;
+        font-size:14px;
+        border-radius:15px;
+        border: solid 1px #e7e7f1;
+        padding:0px 0px 0px 40px ;
+        color: #717b9e;
+    }
+    .Textspan{
+        margin: 0px 0px 0px 0px;
+    }
+    .Well{
+        font-size:12px;
+        font-weight:500;
+        color: #717b9e;
+    }
+    .Netget{
+       
+    }
+    .Inner{
+        width:300px;
+        height:100px;
+        border: solid 1px #e7e7f1;
+        border-radius:20px;
+    }
+    .Innerdiv {
+        width: 300px;
+        height: 100px;
+        border: solid 1px #e7e7f1;
+        border-radius: 20px;
+        margin: -100px 0px 0px 310px;
+    }
+    .Work{
+        font-size:14px;
+        margin: 20px 0px 0px 20px;
+    }
+
+    .Works {
+        font-size: 14px;
+        color: #717b9e;
+        margin: 0px 0px 0px 20px;
+    }
+    .Img{
+        margin: 20px 20px 0px 0px;
+    }
+    .check{
+        margin: 20px 180px 0px 0px;
+        font-size:14px;
+        color: #717b9e;
+        font-weight:500;
+    }
+    .Boxes{
+        font-weight: 500;
+        font-size:14px;
+        margin: 20px 0px 0px 0px;
+    }
+    .Resume{
+       width:400px;
+        background-color:white;
+        border-radius: 20px;     
+        border:solid 1px #e7e7f1 ;
+        margin: 5px 0px 0px 0px;
+    }
+
+    .Upload {
+        margin: 3px 30px 0px 0px;
+              float:right;
+        color: #717b9e;
+        font-weight:500;
+        font-size:15px;
+    }
+    .Buttoncol{
+        background-color:#f05537;
+        border-radius:20px;
+        border-color:transparent;
+       color:white;
+       font-weight:500;
+       height:32px;
+       width:130px;
+       font-size:15px;
+       
+    }
+    .Notify{
+        font-size:12px;
+        font-weight:normal;
+        color: #717b9e;
+    }
+    .Whats{
+        margin: 25px 0px 0px 0px;
+        font-size:14px;
+        font-weight:500;
+    }
+    .You{
+        margin: 0px 0px 0px 60px;
+        font-size: smaller;
+    }
+    .Circle{
+        margin: 10px 0px 0px 40px;
+    }
+   .one{
+       font-weight:500;
+   }
+   .Clicking{
+       font-weight:400;
+       font-size:12px;
+        margin: 0px 0px 0px 0px;
+   }
+   .Nakuri{
+        margin: 20px 0px 0px 0px;
+   }
+   .Policy{
+        color: #275df5;
+   }
+   .Privacy{
+        color:#717b9e;
+   }
+   .Final{
+       width:124px;
+       height:30px;
+        background-color:blue;
+        font-size:14px;
+        font-weight:500;
+        color:white;
+        border:none;
+        border-radius:20px;
+        margin: 20px 0px 0px 0px;
+   }
+   .google{
+        border-left: solid 1px #b0c8ff;    
+       height:100px;
+        margin: -150px 0px 0px 600px;
+   }
+   .Stright{
+        border-left: solid 1px #b0c8ff;
+        height: 100px;
+        margin: -680px 0px 0px 600px;
+   }
+   .Delete{
+       font-size:16px;
+       font-weight:500;
+        margin: -30px 0px 0px 20px;
+   }
+    .venus {
+        height: 100px;
+        margin: 30px 0px 0px 610px;
+    }
+   .danger{
+        border-radius: 20px;
+       border:solid 1px ;
+       border-color:blue;
+       background-color:white;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 10px 0px 0px 20px;
+        height:30px;
+        width:110px;
+   }
+   .Either{
+        margin: -130px 0px 0px 600px;
+        font-size:14px;
+        font-weight:500;
+        color: #b0c8ff;
+   }
+   .Return{
+       margin:0px 0px 0px -10px ;
+   }   
+</style>
+<nav class="navbar navbar-expand-lg navwidth navbar-toggleable-lg navbar-light  bg-white border-bottom box-shadow mb-4">
+    <div class="container-xxl">
+        <a>
+            <img class="Logo" src="/Images/Nakuri.png" />
+        </a>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex-grow-2">
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-normal Margin " asp-area="" asp-controller="Home" asp-action="Index">Already Registered?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary fw-bold Return" asp-area="" asp-controller="Home" asp-action="Privacy">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black fw-normal Return" asp-area="" asp-controller="Home" asp-action="Privacy">here</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class=" border-2 Can">
+  <a>
+        <img class="Boys" src="/Images/Boy.png" />
+  </a>
+  <a>
+      <p class="fs-6 one text-center m-3">On registering, you can</p>
+  </a>
+  <div class="navbar-nav">
+  <ul class="navbar-nav nav-item">
+      <li class="">
+                <i class="fa-solid fa-circle-check  Circle" style="color: #31a013;"> </i>
+                <span class="Font text-black fw-normal">Build your profile and let recruiters</span> 
+                <p class="You">find you</p>
+      </li>
+            <li class="">
+                <i class="fa-solid fa-circle-check Circle" style="color: #31a013;"> </i>
+                <span class="Font text-black fw-normal">Get job posting deliverd right to</span>
+                <p class="You"> your email</p>
+            </li>
+             <li class="">
+                <i class="fa-solid fa-circle-check Circle" style="color: #31a013;"> </i>
+                <span class="Font text-black fw-normal">Find your job and build your carrer</span>
+      </li>
+  </ul>          
+    </div>
+</div>
+    <div class="Main  box-shadow">
+        <div class="Field">
+            <h5 class="">Find your job & build your carrear</h5>
+            <div>
+                <p class="Name ">Full name</p>
+                @Html.TextBoxFor(m=>m.Name,new {@class="Word w-75"})
+              @*  <input class="w-75 Word " type="text" placeholder="What is your name?" />   *@     
+            </div>
+            <div>
+                <p class="Name ">Email ID</p>
+                @Html.TextBoxFor(m=>m.Email,new {@class="Word w-75"})
+               @* <input class="w-75 Word " type="text" placeholder="Tell us your Email ID" />*@
+            
+                        </div>
+            <div class="Well">We'll send you relevant jobs in your mail</div>
+            <div>
+                <p class="Name ">Password</p>
+            @Html.TextBoxFor(m=>m.Pass,new {@class="Word w-75"})
+                @*<input class="w-75 Word " type="text" placeholder="Create a password for your account" />*@
+                        
+            </div>
+            <div class="Well">Minimum 6 characters required</div>
+            <div>
+                <p class="Name ">Mobile number</p>
+            @Html.TextBoxFor(m=>m.Phone,new {@class="Word w-75"})
+               @* <input class="w-75 Word " type="text" placeholder=" Mobile Number" />*@
+                       
+            </div>
+            <div class="Well">Recruiters will call you on this number</div>
+            <p class="Name">Work status</p>
+            <div class="Netget nav-item navbar-nav">
+                <div class="Inner bg-white  ">
+                    <div class="float-end Img">
+                        <img src="/Images/Bags.png" />
+                    </div>
+                    <div>
+                            <h6 class="Work"> I'm experienced</h6>
+                        <p class="Works">
+                            I have work experience<br />(excluding internships)
+                        </p>
+                    </div>
+                </div>
+                 <div class="Innerdiv bg-white  ">
+                    <div class="float-end Img">
+                        <img src="/Images/Book.jpg" />
+                    </div>
+                    <div>
+                        <h6 class="Work">I'm a fresher</h6>
+                        <p class="Works">
+                            I am a student/ Haven't worked<br />after graduation
+                        </p>
+                    </div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <p class="Boxes">Resume</p>
+        <div class="Resume">
+            <div>
+                <button class="Buttoncol">Upload Resume</button>
+                <p class="Upload">DOC, DOCx, PDF, RTF | Max: 2 MB</p>
+            </div>
+           
+        </div>
+        <div class="Notify">Recruiters give first preference to candidates who have a resume</div>
+        <div class="Whats">
+      <input type="checkbox"  />
+      <span>Send me Important updates on</span>
+      <span><img src="/Images/Screenshot 2023-07-13 131447.png" /></span>
+      <span>WhatsApp</span>
+        </div>
+        <div class="Nakuri">
+            <span class="Clicking Privacy">By clicking Register, you agree to the </span>
+            <span class="Clicking Policy">Tearms and Condition</span>
+            <span class="Clicking Privacy">&</span>
+            <span class="Clicking Policy">Privacy Policy </span>
+            <span class="Clicking Privacy">of Nakuri.com</span>
+        </div>
+        <form method="post" action="/Home/Register">
+            <input type="submit" class="Final" value="Registers Now" />
+        </form>
+        <div class="Stright">
+        </div>
+        <div class="Either">Or</div>
+        <div class="google">
+        </div>
+        
+        <div class="venus">
+        <p class="Delete">Continue with</p>
+        <button class="danger">
+            <span class=""><img src="~/Images/Screenshot 2023-07-13 154928.png" /></span>
+            <span class="text-primary">Google</span>
+        </button>
+        </div> 
+    </div>
+</div>
+
+
+
