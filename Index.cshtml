@@ -1,4 +1,5 @@
-﻿@model Nakuri.Models.ErrorViewModel;
+@model Nakuri.Models.ErrorViewModel;
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers;
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -269,31 +270,30 @@
     <div class="Main  box-shadow">
         <div class="Field">
             <h5 class="">Find your job & build your carrear</h5>
+            @using (Html.BeginForm("Register","Home",FormMethod.Post))
+            {
             <div>
-                <p class="Name ">Full name</p>
-                @Html.TextBoxFor(m=>m.Name,new {@class="Word w-75"})
-              @*  <input class="w-75 Word " type="text" placeholder="What is your name?" />   *@     
-            </div>
+                <p class="Name ">Full name</p>          
+                @Html.TextBoxFor(m=>m.Name,new {@class="Word w-75"})          
+           </div>
             <div>
                 <p class="Name ">Email ID</p>
-                @Html.TextBoxFor(m=>m.Email,new {@class="Word w-75"})
-               @* <input class="w-75 Word " type="text" placeholder="Tell us your Email ID" />*@
+                  
+                @Html.TextBoxFor(m=>m.Email,new {@class="Word w-75"})  
             
                         </div>
             <div class="Well">We'll send you relevant jobs in your mail</div>
             <div>
                 <p class="Name ">Password</p>
+                 
             @Html.TextBoxFor(m=>m.Pass,new {@class="Word w-75"})
-                @*<input class="w-75 Word " type="text" placeholder="Create a password for your account" />*@
-                        
             </div>
             <div class="Well">Minimum 6 characters required</div>
             <div>
                 <p class="Name ">Mobile number</p>
-            @Html.TextBoxFor(m=>m.Phone,new {@class="Word w-75"})
-               @* <input class="w-75 Word " type="text" placeholder=" Mobile Number" />*@
-                       
-            </div>
+            
+                @Html.TextBoxFor(m=>m.Phone,new {@class="Word w-75"});                      
+            </div>           
             <div class="Well">Recruiters will call you on this number</div>
             <p class="Name">Work status</p>
             <div class="Netget nav-item navbar-nav">
@@ -327,8 +327,7 @@
             <div>
                 <button class="Buttoncol">Upload Resume</button>
                 <p class="Upload">DOC, DOCx, PDF, RTF | Max: 2 MB</p>
-            </div>
-           
+            </div>         
         </div>
         <div class="Notify">Recruiters give first preference to candidates who have a resume</div>
         <div class="Whats">
@@ -347,12 +346,12 @@
         <form method="post" action="/Home/Register">
             <input type="submit" class="Final" value="Registers Now" />
         </form>
+        }
         <div class="Stright">
         </div>
         <div class="Either">Or</div>
         <div class="google">
-        </div>
-        
+        </div>     
         <div class="venus">
         <p class="Delete">Continue with</p>
         <button class="danger">
@@ -362,6 +361,11 @@
         </div> 
     </div>
 </div>
+
+
+
+
+
 
 
 
